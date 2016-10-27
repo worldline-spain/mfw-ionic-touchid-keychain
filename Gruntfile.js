@@ -42,7 +42,7 @@ module.exports = function (grunt) {
           sourceMap: true
         },
         files: {
-          'dist/mfw-ionic-touchid.service.min.js': 'src/mfw-ionic-touchid-keychain.service.js'
+          'dist/mfw-ionic-touchid-keychain.service.min.js': 'src/mfw-ionic-touchid-keychain.service.js'
         }
       }
     },
