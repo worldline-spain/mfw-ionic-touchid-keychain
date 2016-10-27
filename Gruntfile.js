@@ -48,7 +48,7 @@ module.exports = function (grunt) {
     },
     ngdocs: {
       options: {
-        startPage: '/api/mfw-ionic.deep-links',
+        startPage: '/api/mfw-ionic.touchid-keychain',
         title: false,
         html5Mode: false,
         editLink: false,
