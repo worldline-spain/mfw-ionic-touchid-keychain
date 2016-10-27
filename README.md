@@ -63,9 +63,7 @@ Now you can inject `$mfwiTouchID` service.
 
 ## Usage
 
-**Imperative configuration**
-
-Use `$mfwiLinksProvider.config(options)` and `$mfwiLinksProvider.addRoute(routeDef, callback)` methods.
+The following *login with TouchID* feature illustrates how this service works.
 
 ```js
 angular
