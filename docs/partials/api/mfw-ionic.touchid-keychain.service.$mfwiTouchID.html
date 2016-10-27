@@ -1,0 +1,72 @@
+<a href="https://github.com/worldline-spain/mfw-touchid-keychain-ionic/blob/48f4d77/src/mfw-ionic-touchid-keychain.service.js#L63" class="view-source"><i class="icon-eye-open"> </i>View source</a><h1><code ng:non-bindable="">$mfwiTouchID</code>
+<div><span class="hint">service in module <code ng:non-bindable="">mfw-ionic.touchid-keychain</code>
+</span>
+</div>
+</h1>
+<div><h2 id="description">Description</h2>
+<div class="description"><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-page"><p>Service providing an API to request for user&#39;s fingerprint validation to store values in Keychain.</p>
+<h4 id="description_fingerprint">Fingerprint</h4>
+<p>TouchID capabilities can be used to implement useful features like login, fingerprint-protected data, etc.</p>
+<h4 id="description_keychain">Keychain</h4>
+<p>You can save, update and remove <code>String</code> values protected by user&#39;s fingerprint into OS&#39; Keychain.</p>
+</div></div>
+<div class="member method"><h2 id="methods">Methods</h2>
+<ul class="methods"><li><a href="https://github.com/worldline-spain/mfw-touchid-keychain-ionic/blob/48f4d77/src/mfw-ionic-touchid-keychain.service.js#L152" class="view-source icon-eye-open"> </a><h3 id="methods_haskey">hasKey(key)</h3>
+<div class="haskey"><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-haskey-page"><p>Check if Keychain contains an stored key with the given name.</p>
+<p>Returned promise:</p>
+<ul>
+<li>Will <strong>resolve</strong> if Keychain contains a key with the given name.</li>
+<li>Will <strong>reject</strong> if TouchID is not available or no entry is found in Keychain with that key name.</li>
+</ul>
+</div><h5 id="methods_haskey_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>key</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-haskey-page"><p>Key of the stored value in Keychain.</p>
+</div></td></tr></tbody></table><h5 id="methods_haskey_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-haskey-page"><p>Promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><a href="https://github.com/worldline-spain/mfw-touchid-keychain-ionic/blob/48f4d77/src/mfw-ionic-touchid-keychain.service.js#L90" class="view-source icon-eye-open"> </a><h3 id="methods_isavailable">isAvailable()</h3>
+<div class="isavailable"><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-isavailable-page"><p>Check for availability of TouchID in current device.</p>
+<p>Returned promise:</p>
+<ul>
+<li>Will <strong>resolve</strong> if it&#39;s available.</li>
+<li>Will <strong>reject</strong> if it&#39;s not available.</li>
+</ul>
+</div><h5 id="methods_isavailable_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-isavailable-page"><p>Promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><a href="https://github.com/worldline-spain/mfw-touchid-keychain-ionic/blob/48f4d77/src/mfw-ionic-touchid-keychain.service.js#L203" class="view-source icon-eye-open"> </a><h3 id="methods_removekey">removeKey(key)</h3>
+<div class="removekey"><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-removekey-page"><p>Returns whether the network is considered offline or not.</p>
+<p>Returned promise:</p>
+<ul>
+<li>Will <strong>resolve</strong> if key was successfully removed.</li>
+<li>Will <strong>reject with error message</strong> if TouchID is not available or an error occurred removing the key.</li>
+</ul>
+</div><h5 id="methods_removekey_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>key</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-removekey-page"><p>Key name to be used in Keychain.</p>
+</div></td></tr></tbody></table><h5 id="methods_removekey_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise.&lt;String=&gt;</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-removekey-page"><p>Promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><a href="https://github.com/worldline-spain/mfw-touchid-keychain-ionic/blob/48f4d77/src/mfw-ionic-touchid-keychain.service.js#L178" class="view-source icon-eye-open"> </a><h3 id="methods_savevalue">saveValue(key, value)</h3>
+<div class="savevalue"><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-savevalue-page"><p>Save a key-value pair in Keychain protected by fingerprint.</p>
+<p>Returned promise:</p>
+<ul>
+<li>Will <strong>resolve</strong> if key was successfully saved.</li>
+<li>Will <strong>reject with error message</strong> if TouchID is not available or an error occurred saving the key.</li>
+</ul>
+</div><h5 id="methods_savevalue_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>key</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-savevalue-page"><p>Key name to be used in Keychain.</p>
+</div></td></tr><tr><td>value</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-savevalue-page"><p>Value to be stored.</p>
+</div></td></tr></tbody></table><h5 id="methods_savevalue_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise.&lt;String=&gt;</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-savevalue-page"><p>Promise.</p>
+</div></td></tr></table></div>
+</li>
+<li><a href="https://github.com/worldline-spain/mfw-touchid-keychain-ionic/blob/48f4d77/src/mfw-ionic-touchid-keychain.service.js#L120" class="view-source icon-eye-open"> </a><h3 id="methods_verify">verify(message, key)</h3>
+<div class="verify"><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-verify-page"><p>Request for an stored value in Keychain presenting a fingerprint validation dialog.</p>
+<p>Returned promise:</p>
+<ul>
+<li>Will <strong>resolve with stored value</strong> if fingerprint is validated.</li>
+<li>Will <strong>reject</strong> if TouchID is not available or fingerprint is not validated.</li>
+</ul>
+</div><h5 id="methods_verify_parameters">Parameters</h5><table class="variables-matrix table table-bordered table-striped"><thead><tr><th>Param</th><th>Type</th><th>Details</th></tr></thead><tbody><tr><td>message</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-verify-page"><p>Message to be presented to the user describing why his/her fingerprint is being requested.</p>
+</div></td></tr><tr><td>key</td><td><a href="" class="label type-hint type-hint-string">string</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-verify-page"><p>Key of the stored value in Keychain.</p>
+</div></td></tr></tbody></table><h5 id="methods_verify_returns">Returns</h5><table class="variables-matrix"><tr><td><a href="" class="label type-hint type-hint-promise">Promise.&lt;String&gt;</a></td><td><div class="mfw-ionic-touchid-keychain-service-page mfw-ionic-touchid-keychain-service--mfwitouchid-verify-page"><p>Promise with saved value if resolved.</p>
+</div></td></tr></table></div>
+</li>
+</ul>
+</div>
+</div>
